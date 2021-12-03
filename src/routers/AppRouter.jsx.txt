@@ -1,0 +1,36 @@
+import React from 'react'
+import { BrowserRouter } from "react-router-dom";
+import { Routers, Route } from "react-router-dom";
+import PublicRouter from './PublicRouter';
+
+const AppRoter = () =>{
+
+    return(
+        <BrowserRouter>
+            <Routes>
+                <Route path="login" element={<loginScreen />
+                    
+                } />
+                 {/* <Route path="login" element={
+                    <PublicRouter>
+                        <loginScreen />
+                    </PublicRouter>
+                } /> */}
+                 {/* <Route path="login" element={
+                    <PublicRouter>
+                        <loginScreen />
+                    </PublicRouter>
+                } /> */}
+
+                {/* <Route path="/*" element={
+                    <PrivateRouter>
+                        <DashboardRouter />
+
+                    </PrivateRouter>
+                } /> */}
+            </Routes>
+        </BrowserRouter>
+    )
+}
+
+export default AppRouter

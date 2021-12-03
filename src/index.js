@@ -1,17 +1,20 @@
+//componete se pueda observar
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
+
+
+//Dos  parametros. Donde lo imprime y que va a imprimir
+//   imprime el compone te de App en el id de root--que esta en el HTML
 ReactDOM.render(
   <React.StrictMode>
     <App />
+  
   </React.StrictMode>,
+  
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
